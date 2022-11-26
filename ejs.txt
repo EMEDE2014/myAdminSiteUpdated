@@ -1,0 +1,40 @@
+<% Controle de fluxo (if, for...) %>
+<%= imprime escapando caracteres %>
+<%- imprime sem escapar caracteres %>
+<# Cometario %>
+<%- include('CAMINHO/ARQUIVO');
+
+
+Exemplo de controlo de fluxo
+
+<%  if(alguma coisa){ %>
+        <%= exibe alguma coisa %>
+<% } else{ <%>
+        <%= exibe outra coisa %>
+<% }%>
+
+/* button.btn-event-player{
+    width: 5.100rem;
+    height: 5.100rem;
+    border-radius: 50%;
+    background-color: rgb(247, 247, 247);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: .680rem;
+    color: #1f2c45;
+   margin: 15rem auto;
+    display: inline-flex;
+} */
+
+/* button.btn-event-player::before{
+  content: "";
+  height: 6.200rem;
+  width: 6.200rem;
+  position: absolute;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 0.625rem solid rgba(246, 246, 246, 0.746);
+} */

@@ -1,0 +1,19 @@
+
+div.texts{
+    position: relative;
+    display: block;
+    margin-left: 10px;
+    top: 100px;
+    /* margin-top: 20px; */
+    
+    opacity: 0;
+    transition: 1s;
+    transition-delay:0s;
+
+}
+section .texts.active{
+opacity: 1;
+transition:1s;
+transition-delay:0s;
+top: 0;
+}

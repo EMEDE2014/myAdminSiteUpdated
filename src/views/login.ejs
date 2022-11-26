@@ -1,0 +1,102 @@
+<%- include('includes/header') %>
+
+<main class="main">
+
+    <section class="text-center py-0">
+        <div class="bg-image_login bg-holder overlay overlay-1"> 
+        
+        
+        </div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center logi">
+                <div class="col-md-8 col-lg-5 mx-auto" style="z-index: 50;">
+                    <div class="mb-3">
+                        <a href="/"><img src="/assets/images/logo.png" alt="logo"></a>
+                    </div>
+
+                <div class="card">
+                    <div  class="card-body p-md-5">
+                        <h4 class="text-uppercase fs-0 fs-md-1">login com a event</h4>
+                        <form class="text-start mt-4" action="">
+                            <div class="row align-items-center">
+                                <div class="col-12">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping">
+                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g id="about"><path d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z"/><path d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z"/></g></svg>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Nome do usuárui ou email" aria-label="Username" aria-describedby="addon-wrapping">
+                                      </div>
+                                </div>
+                                <div class="col-12 mt-2 mt-sm-4">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512">
+                                                <g>
+                                                    <path d="M405.333,179.712v-30.379C405.333,66.859,338.475,0,256,0S106.667,66.859,106.667,149.333v30.379   c-38.826,16.945-63.944,55.259-64,97.621v128C42.737,464.214,90.452,511.93,149.333,512h213.333   c58.881-0.07,106.596-47.786,106.667-106.667v-128C469.278,234.971,444.159,196.657,405.333,179.712z M277.333,362.667   c0,11.782-9.551,21.333-21.333,21.333c-11.782,0-21.333-9.551-21.333-21.333V320c0-11.782,9.551-21.333,21.333-21.333   c11.782,0,21.333,9.551,21.333,21.333V362.667z M362.667,170.667H149.333v-21.333c0-58.91,47.756-106.667,106.667-106.667   s106.667,47.756,106.667,106.667V170.667z"/>
+                                                </g>
+                                                </svg>
+
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
+                                      </div>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mt-3">
+                                <div class="col-4 mt-2 mt-sm-3">
+                                    <button class="btn btn-primary w-100">Login</button>
+                                 </div>
+                                 <a class="mt-2" href="#">Esqueci minha senha</a>
+                            </div>
+
+                            <div class="row align-items-center mt-3">
+                                <div class="col-12 mt-2 mt-sm-3 d-flex">
+                                <p>Não tem uma conta?</p> &nbsp; <a href="/register">Registar usuário</a>
+                                  
+                                   
+                                </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="/assets/js/swiper.min.js"></script>
+<script src="/assets/js/slick.min.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+<script type="text/javascript">
+$('section.bg-client .slickSlider-box').slick({
+		dots: false,
+		arrows:false,
+	    infinite: true,
+	    speed:1000,
+	    slidesToShow: 1,
+	    autoplay: true,
+	    centerMode:false,
+	    autoplaySpeed: 3000,
+	    pauseOnHover:false,
+	    responsive: 
+	    [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 1,
+			speed: 1000,
+			
+	      }
+	    }
+	    ]
+	});
+</script>
+<script src="/assets/js/configSwiper.js"></script>
+<script src="/assets/js/bundle.js"></script>
+</body>
+</html>
+
+
