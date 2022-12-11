@@ -619,8 +619,11 @@ input[type=email] {
 .regist button {
     padding: 0.800em;
 }
-
-
+div .primary h4{
+    color: var(--bg-primary);
+    font-weight: 600;
+   
+}
 
 .bg-image_login {
     position: absolute;
