@@ -13,32 +13,37 @@
                     <div class="mb-3">
                         <a href="/"><img src="/assets/images/logo.png" alt="logo"></a>
                     </div>
+                  
 
                     <div class="card">
+
+                        <%- include('includes/messagesViewSuccess'); %>
+
                         <div class="card-body p-md-3">
-                            <div class="text-uppercase primary mt-4 fs-0 fs-md-1">
+                            <div class="text-uppercase primary mt-3 fs-0 fs-md-1">
                                 <h4>crie sua conta no event</h4>
                             </div>
 
-                            <form class="text-start regist mt-4" action="">
+                            <form class="text-start regist mt-4" method="post" action="/register/user">
                                 <div class="row align-items-center g-4">
+                                    <input type="hidden" name="_csrf" value="<%=csrfToken %>">
                                     <div class="col-6">
-                                        <input type="text" class="form-control" placeholder="Primeiro Nome" aria-label="Primeiro Nome">
+                                     <input type="text" class="form-control" name="firstname" placeholder="Primeiro Nome" aria-label="Primeiro Nome">
                                     </div>
                                     <div class="col-6">
-                                        <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome">
+                                        <input type="text" class="form-control" name="lastname" placeholder="Sobrenome" aria-label="Sobrenome">
                                     </div>
 
                                     <div class="col-12">
-                                        <input type="email" class="form-control" required placeholder="Endereço Email" aria-label="Endreço Email">
+                                        <input type="email" class="form-control" name="email" required placeholder="Endereço Email" aria-label="Endreço Email">
                                     </div>
 
                                     <div class="col-12">
-                                        <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+                                        <input type="text" class="form-control" name="password" placeholder="Password" aria-label="Password">
                                     </div>
 
                                     <div class="col-12">
-                                        <input type="text" class="form-control" placeholder="Confirmar Password" aria-label="Confirmar Password">
+                                        <input type="text" class="form-control" name="repeatpassword" placeholder="Confirmar Password" aria-label="Confirmar Password">
                                     </div>
                                 </div>
 
