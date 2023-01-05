@@ -51,6 +51,10 @@ class Login {
     valida() {
         this.cleanUp();
 
+        this.body =  document.querySelector('.password');
+        this.body = document.querySelector('.repeatpassword');
+
+        console.log( this.body.password)
         if(this.body.firstname.length < 3 || this.body.firstname > 50){
             this.errors.push('O nome precisa ter 3 ou mais caracteres.');
         }
@@ -66,6 +70,7 @@ class Login {
             console.log(this.body.password.value)
             this.errors.push('A senha precisa ter entre 8 ou 30 caracteres.');
         }
+       
         
    
         
