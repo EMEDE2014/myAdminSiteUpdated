@@ -1,1 +1,5 @@
-console.log("Escutando com webpack");
+const gsapExecute = require('./modules/gsap/index');
+(() => {
+    gsapExecute
+})
+

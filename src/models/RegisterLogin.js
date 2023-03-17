@@ -32,7 +32,6 @@ class Login {
       await this.usersExist();
         const salt = bcryptjs.genSaltSync()
         this.body.password = bcryptjs.hashSync(this.body.password,salt);
-        this.body.repeatpassword = bcryptjs.hashSync(this.body.repeatpassword,salt);
         if (this.errors.length > 0) return;
         
         try {
@@ -51,10 +50,6 @@ class Login {
     valida() {
         this.cleanUp();
 
-        this.body =  document.querySelector('.password');
-        this.body = document.querySelector('.repeatpassword');
-
-        console.log( this.body.password)
         if(this.body.firstname.length < 3 || this.body.firstname > 50){
             this.errors.push('O nome precisa ter 3 ou mais caracteres.');
         }
@@ -70,11 +65,9 @@ class Login {
             console.log(this.body.password.value)
             this.errors.push('A senha precisa ter entre 8 ou 30 caracteres.');
         }
-       
-        
-   
         
     }
+    
     cleanUp() {
         for (const key in this.body) {
             if (typeof this.body[key] !== 'string') {

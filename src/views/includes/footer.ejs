@@ -14,57 +14,16 @@
 	</div>
       
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+<script src="/assets/js/gsap.min.js"></script>
+<script src="/assets/js/ScrollTrigger.min.js"></script>
+<script src="/assets/js/gsapConfig.js"></script>
 <script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
 <script src="/assets/js/swiper.min.js"></script>
 <script src="/assets/js/slick.min.js"></script>
 <script src="/assets/js/bootstrap.js"></script>
-<script type="text/javascript">
-$('section.bg-client .slickSlider-box').slick({
-		dots: false,
-		arrows:false,
-	    infinite: true,
-	    speed:1000,
-	    slidesToShow: 1,
-	    autoplay: true,
-	    centerMode:false,
-	    autoplaySpeed: 3000,
-	    pauseOnHover:false,
-	    responsive: 
-	    [
-	    {
-	      breakpoint: 768,
-	      settings: {
-	        slidesToShow: 1,
-			speed: 1000,
-			
-	      }
-	    }
-	    ]
-	});
-</script>
 <script src="/assets/js/configSwiper.js"></script>
+<script src="/assets/js/menu.js"></script>
+<script type="text/javascript" src="/assets/js/configSlick.js"></script>
 <script src="/assets/js/bundle.js"></script>
-<script>
-	 const navigation = document.querySelector('.navigation');
-        document.querySelector('.toggle').onclick = function(){
-            this.classList.toggle('active')
-            navigation.classList.toggle('active')
-        }
-</script>
-
-<script>
-	       const text = gsap.utils.toArray('.texts');
-        text.forEach((text, i) => {
-            ScrollTrigger.create({
-                trigger: text,
-                toggleClass: 'active',
-                start: "top 90%",
-                end: "top 20%",
-              
-                      })
-        })
-</script>
 </body>
 </html>
