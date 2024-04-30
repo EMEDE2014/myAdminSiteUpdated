@@ -1,0 +1,7 @@
+Coloque no arquivo register.ejs na linha 30 ou 29
+
+<!-- <input type="hidden" name="_csrf" value="<%=csrfToken%>"> -->
+
+Coloque no arquivo login.ejs na linha 18 
+
+<!-- <%- include('includes/messagesViewSuccess'); %> -->
